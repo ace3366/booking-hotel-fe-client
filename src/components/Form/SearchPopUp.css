@@ -1,0 +1,16 @@
+/* Xử lý phần input ở dưới */
+.subInput div {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 24px;
+}
+.subInput span {
+  color: #676046;
+}
+.subInput span span {
+  font-size: 12px;
+}
+.subInput input {
+  width: 24%;
+  border: 1px solid #676046;
+}

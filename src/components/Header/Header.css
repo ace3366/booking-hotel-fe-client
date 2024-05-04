@@ -1,0 +1,45 @@
+.myHeader {
+  margin: 0 auto;
+}
+
+.myHeader h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.upperHeader {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.upperHeader div {
+  margin-bottom: 20px;
+}
+
+/* Xử lý thanh Search */
+.searchSection {
+  position: relative;
+  top: 30px;
+
+  background-color: #fff;
+  border: 2px solid #fcbf11;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+.searchSection .input {
+  width: 29%;
+  border: none;
+}
+
+.fontAwesome {
+  font-family: "Helvetica", FontAwesome, sans-serif;
+}
+/* Tạo kiểu cho button trong Button */
+.myHeader .btn,
+.myHeader a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  background-color: #0071c2;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
