@@ -131,9 +131,9 @@ export default function BookingForm({ className }) {
           <p className={styles.alert}>{alert.room}</p>
         )}
 
-        <ul className="flex mt-5">
+        <ul className="flex mt-5 flex-wrap">
           {data.rooms.map((room) => (
-            <li className="basis-1/2 flex gap-12">
+            <li className="basis-1/3 flex gap-12 mt-5">
               {/* Room info section */}
               <div className="">
                 <h3 className="text-lg font-semibold">{room.title}</h3>

@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Form, redirect } from "react-router-dom";
+import { Form, redirect, Link } from "react-router-dom";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
@@ -35,7 +35,7 @@ const Header = () => {
             Get rewarded for you travels - unlock instant savings of 10% or more
             with a free account
           </div>
-          <a href="/">Sign in / Register</a>
+          <Link to="/register">Sign in / Register</Link>
         </div>
         {/* Phần thanh Search */}
         <div className="searchSection relative">
@@ -44,8 +44,8 @@ const Header = () => {
             <input
               type="text"
               name="city"
-              className="fontAwesome input py-2"
-              placeholder="   &#xF236; Where are you going?"
+              className="fontAwesome input py-2 pl-2 focus:outline-none"
+              placeholder=" &#xF236; Where are you going?"
             />
             {/* Phần thời gian */}
             <span
@@ -87,7 +87,7 @@ const Header = () => {
                   <input
                     type="number"
                     name="adult"
-                    className="w-12"
+                    className="w-12 pl-2"
                     value={roomData.adult}
                     onChange={(e) => {
                       setRoomData((prevState) => {
@@ -103,7 +103,7 @@ const Header = () => {
                   <input
                     type="number"
                     name="children"
-                    className="w-12"
+                    className="w-12 pl-2"
                     value={roomData.children}
                     onChange={(e) => {
                       setRoomData((prevState) => {
@@ -119,7 +119,7 @@ const Header = () => {
                   <input
                     type="number"
                     name="room"
-                    className="w-12"
+                    className="w-12 pl-2"
                     value={roomData.room}
                     onChange={(e) => {
                       setRoomData((prevState) => {
