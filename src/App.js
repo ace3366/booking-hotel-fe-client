@@ -10,11 +10,13 @@ import SignUp, { action as signUpAction } from "./pages/login-signUp/SignUp";
 import Transaction, {
   loader as transactionLoader,
 } from "./pages/transaction/Transaction";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       { index: true, element: <Home />, action: homeAction },
       { path: "login", element: <Login />, action: loginAction },
