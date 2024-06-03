@@ -60,9 +60,9 @@ export default function NavBarItems() {
 
   return (
     <section className=" bg-[#003580] ">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto px-2 ipad:px-0">
         {" "}
-        <NavItems>
+        <ul className="list-none py-3 flex flex-col overflow-auto min-[600px]:flex-row">
           {navInfo.map((navList) => (
             <NavBarItem
               key={navList.id}
@@ -72,7 +72,7 @@ export default function NavBarItems() {
               receiveMsg={updateActive}
             ></NavBarItem>
           ))}
-        </NavItems>
+        </ul>
       </div>
     </section>
   );

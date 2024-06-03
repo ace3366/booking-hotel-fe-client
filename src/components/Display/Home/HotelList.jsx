@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 const HotelList = ({ id, name, city, price, rate, type, image }) => {
   return (
     <div className="flex-1 ">
-      <img className="h-60 w-full object-cover" src={image} alt="Hotel" />
+      <img
+        className="h-60 w-full object-cover rounded"
+        src={image}
+        alt="Hotel"
+      />
       <Link
         to={`/detail/${id}`}
         className=" mt-3 inline-block underline visited:text-[#733295] font-bold"

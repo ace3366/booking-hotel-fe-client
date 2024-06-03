@@ -5,8 +5,8 @@ import SearchList from "../../components/Display/Search/SearchList";
 const Search = () => {
   return (
     <div>
-      <div className="flex max-w-5xl mx-auto mt-12">
-        <SearchPopUp className="flex-initial"></SearchPopUp>
+      <div className="flex flex-col lg:flex-row justify-center items-center max-w-5xl mx-auto mt-12">
+        <SearchPopUp className="mb-10"></SearchPopUp>
         <SearchList className="flex-auto"></SearchList>
       </div>
     </div>

@@ -8,7 +8,9 @@ export default function Layout() {
   return (
     <>
       <NavBar></NavBar>
+
       <Outlet></Outlet>
+
       <Footer></Footer>
     </>
   );

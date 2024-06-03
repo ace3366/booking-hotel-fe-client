@@ -13,24 +13,26 @@ const NavBar = () => {
   };
   return (
     <section className=" bg-[#003580] h-14">
-      <div className="flex justify-between pt-4 max-w-5xl mx-auto">
-        <Link to="" className="text-[#fff]">
+      <div className="flex justify-between pt-4 max-w-5xl mx-auto px-2 ipad:px-0">
+        <Link to="/" className="text-[#fff] sp:text-lg text-sm">
           Booking Website
         </Link>
         {user._id ? (
           <div>
-            <p className="inline-block text-[#efefef]">{user.username}</p>
+            <p className=" sm:inline-block hidden text-[#efefef]">
+              {user.username}
+            </p>
 
             <Link
               to="transaction"
-              className="text-[#003580] bg-[#efefef] px-2 py-2 ml-5"
+              className="text-[#003580] hover:bg-neutral-300 bg-[#efefef] px-2 py-2 ml-5 rounded"
             >
               Transactions
             </Link>
 
             <Link
               to="login"
-              className="text-[#003580] bg-[#efefef] px-2 py-2 ml-5"
+              className="text-[#003580] hover:bg-neutral-300 bg-[#efefef] px-2 py-2 ml-5 rounded"
               onClick={logoutHandler}
             >
               Logout
@@ -40,14 +42,14 @@ const NavBar = () => {
           <div className="inline-block">
             <Link
               to="register"
-              className="text-[#003580] bg-[#efefef] px-2 py-2 ml-5"
+              className="text-[#003580] hover:bg-neutral-300 bg-[#efefef] px-2 py-2 ml-5 rounded"
             >
               Register
             </Link>
 
             <Link
               to="login"
-              className="text-[#003580] bg-[#efefef] px-2 py-2 ml-5"
+              className="text-[#003580] hover:bg-neutral-300 bg-[#efefef] px-2 py-2 ml-5 rounded"
             >
               Login
             </Link>

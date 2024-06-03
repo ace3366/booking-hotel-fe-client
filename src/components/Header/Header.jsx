@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <section className="bg-[#003580] ">
-      <div className="myHeader max-w-5xl">
+      <div className="myHeader max-w-5xl px-2 ipad:px-0">
         {/* Phần giới thiệu */}
         <div className="upperHeader">
           <h1 className="intro">A lifetime of discount? It's Genius.</h1>
@@ -39,17 +39,20 @@ const Header = () => {
         </div>
         {/* Phần thanh Search */}
         <div className="searchSection relative">
-          <Form method="post">
+          <Form
+            method="post"
+            className=" flex flex-col justify-between md:flex-row"
+          >
             {/* Phần địa điểm */}
             <input
               type="text"
               name="city"
               className="fontAwesome input py-2 pl-2 focus:outline-none"
-              placeholder=" &#xF236; Where are you going?"
+              placeholder="&#xF236; Where are you going"
             />
             {/* Phần thời gian */}
             <span
-              className="cursor-pointer fontAwesome input inline-block text-[#9ca4ac]"
+              className="cursor-pointer py-2 pl-2 md:pl-0 fontAwesome input inline-block text-[#9ca4ac]"
               onClick={() => {
                 setDateClicked(!dateClicked);
               }}
@@ -70,7 +73,7 @@ const Header = () => {
             <input type="hidden" value={JSON.stringify(date)} name="date" />
             {/* Phần số người , số phòng */}
             <span
-              className="cursor-pointer fontAwesome input inline-block text-[#9ca4ac]"
+              className="cursor-pointer py-2 pl-2 md:pl-0 fontAwesome input inline-block text-[#9ca4ac]"
               onClick={() => {
                 setRoomClicked(!roomClicked);
               }}
@@ -131,7 +134,11 @@ const Header = () => {
               </div>
             )}
 
-            <input className="btn" type="submit" value="Search" />
+            <input
+              className="btn mr-2 ml-2 md:ml-0 hover:bg-blue-800 rounded"
+              type="submit"
+              value="Search"
+            />
           </Form>
         </div>
       </div>

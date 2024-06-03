@@ -7,15 +7,15 @@ const Register = () => {
       <div className="text-center text-white mt-4">
         Sign up and we'll send the best deals to you
       </div>
-      <div className="text-center mt-4">
-        <form>
+      <div className=" mt-4">
+        <form className="flex justify-center mx-3 items-center gap-2 flex-col sm:flex-row">
           <input
-            className="h-12 w-1/4 rounded"
+            className="h-12 w-full sm:w-1/4 block rounded"
             type="text"
             placeholder="  Your email"
           />
           <input
-            className="bg-[#0071c2] text-white px-2 py-3 rounded ml-3 cursor-pointer"
+            className="bg-[#0071c2] text-white px-2 py-3 rounded cursor-pointer"
             type="submit"
             value="Subscribe"
           />

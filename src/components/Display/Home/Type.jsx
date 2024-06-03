@@ -7,7 +7,7 @@ const Type = () => {
   return (
     <>
       <h2 className="font-bold">Browse by property type</h2>
-      <div className="flex justify-between gap-4 mt-5">
+      <div className="flex justify-between flex-col min-[500px]:flex-row gap-4 mt-5">
         {typeData.map((type) => (
           <TypeList
             key={type.id}

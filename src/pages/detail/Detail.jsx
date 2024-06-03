@@ -6,13 +6,13 @@ const Detail = () => {
   return (
     <>
       <NavBarItems></NavBarItems>
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl ipad:mx-auto mx-2">
         <div>
           <DetailHotel></DetailHotel>
           <BookingForm className="mt-9"></BookingForm>
         </div>
-        <Register></Register>
       </div>
+      <Register></Register>
     </>
   );
 };

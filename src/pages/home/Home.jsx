@@ -25,14 +25,14 @@ const Home = () => {
       <NavBarItems></NavBarItems>
       <Header></Header>
       {/* Phần chứa các info */}
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto px-2">
         {/* Phần hiển thị các City */}
         <City></City>
         {/* Phần hiển thị các Type */}
         <Type></Type>
         <Hotel></Hotel>
-        <Register></Register>
       </div>
+      <Register></Register>
     </div>
   );
 };

@@ -63,7 +63,7 @@ const footerData = [
 
 const Footer = () => {
   return (
-    <div className="flex justify-between text-[#003580] mt-9 mb-12 max-w-5xl mx-auto text-sm ">
+    <div className=" min-[700px]:flex block min-[700px]:text-left text-center justify-between ipad:mx-auto mx-2 text-[#003580] mt-9 mb-12 max-w-5xl  text-sm ">
       {footerData.map((footer) => (
         <FooterList
           key={footer.id}

@@ -46,7 +46,7 @@ export default function BookingForm({ className }) {
     <Form method="post" className={className}>
       {/* Create hidden user info input */}
       <input type="hidden" value={user._id} name="userId" />
-      <section className="flex justify-between gap-10">
+      <section className="flex flex-col sm:flex-row justify-between gap-10">
         {/* Choosing Date section  */}
         <div className="basis-1/3">
           <h2 className="font-bold text-2xl">Dates</h2>
@@ -131,9 +131,9 @@ export default function BookingForm({ className }) {
           <p className={styles.alert}>{alert.room}</p>
         )}
 
-        <ul className="flex mt-5 flex-wrap">
+        <ul className="flex mt-5 gap-10 flex-wrap">
           {data.rooms.map((room) => (
-            <li className="basis-1/3 flex gap-12 mt-5">
+            <li className=" flex gap-12 mt-5">
               {/* Room info section */}
               <div className="">
                 <h3 className="text-lg font-semibold">{room.title}</h3>
@@ -202,7 +202,7 @@ export default function BookingForm({ className }) {
         {alert && alert.payment !== "valid" && (
           <p className={styles.alert}>{alert.payment}</p>
         )}
-        <div className="flex gap-16 mt-2">
+        <div className="flex flex-col sm:flex-row gap-16 mt-2">
           <DropList className="basis-1/3"></DropList>
           <div>
             <button className="py-3 px-10 font-semibold text rounded text-white bg-[#0071c2]">

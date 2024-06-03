@@ -23,18 +23,18 @@ const DetailHotel = () => {
         </div>
       </div>
       {/* Phần hình ảnh biểu diễn bằng grid */}
-      <div className="grid grid-cols-3 gap-2">
+      <div className="flex flex-col sm:flex-row justify-between gap-2">
         {hotelData.photos.map((img) => (
-          <img src={img} alt="" />
+          <img src={img} alt="" className="sm:w-1/3 w-full rounded" />
         ))}
       </div>
       {/* Phần thông tin chi tiết */}
-      <div className="flex justify-between mt-8">
+      <div className="flex flex-col sm:flex-row justify-between mt-8">
         <div className="basis-3/4 pr-6">
           <h2 className="font-bold text-2xl mb-5">{hotelData.title}</h2>
           <div className="text-sm">{hotelData.desc}</div>
         </div>
-        <div className=" basis-1/4 px-4 py-5 bg-[#f0f4fc]">
+        <div className=" basis-1/4 mt-2 sm:mt-0  px-4 py-5 bg-[#f0f4fc]">
           <div className="text-2xl font-light mb-5">
             <span className="font-bold ">{`$${hotelData.cheapestPrice}`}</span>
             <span> (1 nights)</span>
